@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="hy">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMARANOC.AM | Առանձնատներ և Տնակներ</title>
+  <script type="module" src="/src/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header id="screen-1" class="header-section">
+    <nav class="navbar">
+      <div class="logo">AMARAN<span>OC</span>.AM</div>
+      <ul class="nav-links">
+        <li><a href="#screen-1" class="active">Գլխավոր</a></li>
+        <li><a href="#screen-3">Զեղչեր</a></li>
+        <li><a href="#screen-4">Ծառայություններ</a></li>
+        <li><a href="#screen-9">Մեր մասին</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn"><i class="fa-solid fa-globe"></i></button>
+        <button class="icon-btn"><i class="fa-solid fa-user"></i></button>
+        <div class="search-box">
+          <input type="text" placeholder="Որոնում...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <h1>Գտեք Ձեր Կատարյալ Հանգիստը Հայաստանում</h1>
+      <p>Վարձակալեք լավագույն առանձնատներն ու տնակները անմիջապես տերերից</p>
+      <a href="#screen-3" class="btn-primary">Դիտել Առաջարկները</a>
+    </div>
+  </header>
+  <section id="screen-2" class="filter-toolbar-section">
+    <div class="container">
+      <div class="toolbar-actions">
+        <button class="btn-outline"><i class="fa-solid fa-map-location-dot"></i> Քարտեզ</button>
+        <button class="btn-outline"><i class="fa-regular fa-calendar-days"></i> Օրացույց</button>
+      </div>
+      <div class="categories-scroll">
+        <div class="category-card active"><i class="fa-solid fa-house"></i><span>Առանձնատներ</span></div>
+        <div class="category-card"><i class="fa-solid fa-campground"></i><span>Frame houses</span></div>
+        <div class="category-card"><i class="fa-solid fa-house-chimney"></i><span>Տնակներ</span></div>
+        <div class="category-card"><i class="fa-solid fa-person-swimming"></i><span>Փակ լողավազան</span></div>
+        <div class="category-card"><i class="fa-solid fa-tree"></i><span>Աղմուկից հեռու</span></div>
+        <div class="category-card"><i class="fa-solid fa-mountain"></i><span>Շքեղ տեսարան</span></div>
+        <div class="category-card"><i class="fa-solid fa-fire"></i><span>Պահանջված</span></div>
+      </div>
+    </div>
+  </section>
+  <div class="main-layout container">
+    <aside class="sidebar-filters">
+      <h3>Տարածաշրջան</h3>
+      <ul class="checkbox-list">
+        <li><label><input type="checkbox"> Դիլիջան <span>179</span></label></li>
+        <li><label><input type="checkbox"> Ծաղկաձոր <span>103</span></label></li>
+        <li><label><input type="checkbox"> Աշտարակ <span>37</span></label></li>
+        <li><label><input type="checkbox"> Գառնի <span>35</span></label></li>
+        <li><label><input type="checkbox"> Ջերմուկ <span>26</span></label></li>
+      </ul>
+
+      <h3>Արժեք</h3>
+      <div class="currency-selector">
+        <button class="active">֏</button>
+        <button>$</button>
+        <button>€</button>
+        <button>₽</button>
+      </div>
+      <div class="price-inputs">
+        <input type="number" placeholder="Սկսած">
+        <span>-</span>
+        <input type="number" placeholder="Մինչև">
+      </div>
+
+      <h3>Մարդկանց թույլատրելի քանակ</h3>
+      <div class="counter-input">
+        <button class="btn-counter-minus">-</button>
+        <span class="count-value">1</span>
+        <button class="btn-counter-plus">+</button>
+      </div>
+
+      <h3>Գիշերակացի առկայություն</h3>
+      <div class="toggle-options">
+        <button class="active">Բոլորը</button>
+        <button>Այո</button>
+      </div>
+    </aside>
+    <main class="cards-wrapper">
+
+      <section id="screen-3" class="screen-block">
+        <h2>Լավագույն առաջարկներ</h2>
+        <div class="grid-3">
+          <div class="property-card">
+            <div class="card-image">
+              <img src="https://picsum.photos/400/300?random=1" alt="Ծաղկաձոր">
+              <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-info">
+              <div class="card-header">
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Ծաղկաձոր</span>
+                <span class="capacity"><i class="fa-solid fa-user-group"></i> 20</span>
+              </div>
+              <div class="card-footer">
+                <span class="price">70,000 ֏</span>
+              </div>
+            </div>
+          </div>
+          <div class="property-card">
+            <div class="card-image">
+              <img src="https://picsum.photos/400/300?random=2" alt="Պտղնի">
+              <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-info">
+              <div class="card-header">
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Պտղնի</span>
+                <span class="capacity"><i class="fa-solid fa-user-group"></i> 30</span>
+              </div>
+              <div class="card-footer">
+                <span class="price">90,000 ֏</span>
+              </div>
+            </div>
+          </div>
+          <div class="property-card">
+            <div class="card-image">
+              <img src="https://picsum.photos/400/300?random=3" alt="Ծաղկաձոր">
+              <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+              <span class="rating-badge">★ 5</span>
+            </div>
+            <div class="card-info">
+              <div class="card-header">
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Ծաղկաձոր</span>
+                <span class="capacity"><i class="fa-solid fa-user-group"></i> 18</span>
+              </div>
+              <div class="card-footer">
+                <span class="price">110,000 ֏</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-4" class="screen-block">
+        <h2>Պահանջված տնակներ</h2>
+        <div class="grid-3">
+          <div class="property-card">
+            <div class="card-image"><img src="https://picsum.photos/400/300?random=4" alt="Աբովյան"></div>
+            <div class="card-info">
+              <div class="card-header"><span>Աբովյան</span><span>👥 30</span></div>
+              <div class="card-footer"><span class="price">65,000 ֏</span></div>
+            </div>
+          </div>
+          <div class="property-card">
+            <div class="card-image"><img src="https://picsum.photos/400/300?random=5" alt="Գառնի"><span
+                class="rating-badge">★ 5</span></div>
+            <div class="card-info">
+              <div class="card-header"><span>Գառնի</span><span>👥 6</span></div>
+              <div class="card-footer"><span class="price">45,000 ֏</span></div>
+            </div>
+          </div>
+          <div class="property-card">
+            <div class="card-image"><img src="https://picsum.photos/400/300?random=6" alt="Նոր Հաճն"><span
+                class="rating-badge">★ 5</span></div>
+            <div class="card-info">
+              <div class="card-header"><span>Նոր Հաճն</span><span>👥 30</span></div>
+              <div class="card-footer"><span class="price">120,000 ֏</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-5" class="screen-block">
+        <h2>Բնության գրկում</h2>
+        <div class="grid-3">
+          <div class="property-card">
+            <div class="card-image"><img src="https://picsum.photos/400/300?random=7" alt="Բյուրական"></div>
+            <div class="card-info">
+              <div class="card-header"><span>Բյուրական</span><span>👥 3</span></div>
+              <div class="card-footer"><span class="price">35,000 ֏</span></div>
+            </div>
+          </div>
+          <div class="property-card">
+            <div class="card-image"><img src="https://picsum.photos/400/300?random=8" alt="Դսեղ"></div>
+            <div class="card-info">
+              <div class="card-header"><span>Դսեղ</span><span>👥 6</span></div>
+              <div class="card-footer"><span class="price">30,000 ֏</span></div>
+            </div>
+          </div>
+          <div class="property-card">
+            <div class="card-image"><img src="https://picsum.photos/400/300?random=9" alt="Դսեղ"></div>
+            <div class="card-info">
+              <div class="card-header"><span>Դսեղ</span><span>👥 4</span></div>
+              <div class="card-footer"><span class="price">20,000 ֏</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="screen-6" class="screen-block">
+        <h2>Էքսկլյուզիվ Առանձնատներ</h2>
+        <div class="grid-3">
+          <div class="property-card">
+            <div class="card-image"><img src="https://picsum.photos/400/300?random=10" alt="Դիլիջան"></div>
+            <div class="card-info">
+              <div class="card-header"><span>Դիլիջան</span><span>👥 20</span></div>
+              <div class="card-footer"><span class="price">150,000 ֏</span></div>
+            </div>
+          </div>
+          <div class="property-card">
+            <div class="card-image"><img src="https://picsum.photos/400/300?random=11" alt="Զովունի"></div>
+            <div class="card-info">
+              <div class="card-header"><span>Զովունի</span><span>👥 40</span></div>
+              <div class="card-footer"><span class="price">50,000 ֏</span></div>
+            </div>
+          </div>
+          <div class="property-card">
+            <div class="card-image"><img src="https://picsum.photos/400/300?random=12" alt="Աշտարակ"><span
+                class="rating-badge">★ 5</span></div>
+            <div class="card-info">
+              <div class="card-header"><span>Աշտարակ</span><span>👥 60</span></div>
+              <div class="card-footer"><span class="price">75,000 ֏</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-7" class="pagination-section">
+        <div class="pagination">
+          <button class="page-btn"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <span>...</span>
+          <button class="page-btn">32</button>
+          <button class="page-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <section id="screen-8" class="post-announcement-section">
+    <div class="form-overlay">
+      <h2>ՏԵՂԱԴՐԵԼ ՀԱՅՏԱՐԱՐՈՒԹՅՈՒՆ</h2>
+      <p>Մուտքագրեք Ձեր տվյալները նշված դաշտերում և մենք կկապվենք Ձեզ հետ</p>
+      <form id="announcementForm" class="announcement-form">
+        <input type="text" placeholder="Անուն Ազգանուն" required>
+        <input type="tel" placeholder="Հեռախոսահամար" required>
+        <input type="email" placeholder="Էլ. հասցե" required>
+        <button type="submit" class="btn-submit">Ուղարկել</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="screen-9" class="about-section container">
+    <h2>Ինչո՞ւ ընտրել AMARANOC.AM-ը</h2>
+    <div class="features-grid">
+      <div class="feature-box">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Ապահով Ամրագրում</h3>
+        <p>Բոլոր հայտարարությունները ստուգվում են մեր թիմի կողմից:</p>
+      </div>
+      <div class="feature-box">
+        <i class="fa-solid fa-tags"></i>
+        <h3>Լավագույն Գներ</h3>
+        <p>Ամրագրեք անմիջապես սեփականատիրոջից՝ առանց միջնորդավճարների:</p>
+      </div>
+      <div class="feature-box">
+        <i class="fa-solid fa-headset"></i>
+        <h3>24/7 Աջակցություն</h3>
+        <p>Մեր թիմը պատրաստ է օգնել Ձեզ ցանկացած հարցում:</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="screen-10" class="footer-section">
+    <div class="container">
+      <h2>ԿՈՆՏԱԿՏՆԵՐ</h2>
+      <div class="contacts-row">
+        <div class="contact-item"><i class="fa-solid fa-phone"></i> 041-611-611</div>
+        <div class="contact-item"><i class="fa-solid fa-envelope"></i> AMARANOC.INFO@GMAIL.COM</div>
+        <div class="contact-item"><i class="fa-brands fa-instagram"></i> AMARANOC.AM</div>
+        <div class="contact-item"><i class="fa-brands fa-facebook"></i> AMARANOC.AM</div>
+        <div class="contact-item"><i class="fa-solid fa-location-dot"></i> ԹՈՒՄԱՆՅԱՆ 5</div>
+      </div>
+      <div class="footer-links">
+        <a href="#">Գաղտնիության քաղաքականություն</a>
+      </div>
+      <p class="copyright">Ամառանոց ՍՊԸ | Amaranoc LLC | Амараноц ООО</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
